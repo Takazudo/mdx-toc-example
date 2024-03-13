@@ -15,10 +15,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@mdx-js/react": "^3.0.1"
+    "@mdx-js/react": "^3.0.1",
+    "preact": "^10.19.6",
+    "preact-render-to-string": "^6.4.0",
+    "virtual-hyperscript": "^4.6.0"
   },
   "dependencies": {
     "@mdx-js/esbuild": "^3.0.1",
-    "@mdx-js/mdx": "^3.0.1"
+    "@mdx-js/mdx": "^3.0.1",
+    "@mdx-js/preact": "^3.0.1",
+    "react-dom": "^18.2.0",
+    "rehype-external-links": "^3.0.0"
   }
 }

@@ -1,4 +1,5 @@
-import mdx from '@mdx-js/esbuild'
+import mdx from "@mdx-js/esbuild";
+import rehypeExternalLinks from "rehype-external-links";
 
 const settings = {
   logLevel: "info",
@@ -11,7 +12,15 @@ const settings = {
   platform: "browser",
   plugins: [
     mdx({
-      /* jsxImportSource: …, otherOptions… */
+      providerImportSource: "@mdx-js/react",
+      rehypePlugins: [
+        [
+          rehypeExternalLinks,
+          {
+            rel: ["nofollow"],
+          },
+        ],
+      ],
     }),
   ],
 };
