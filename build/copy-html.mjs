@@ -1,7 +1,7 @@
-const fs = require("fs").promises;
-const path = require("path");
+import { promises as fs } from "fs";
+import path from "path";
 
-module.exports = async function ({ outDir }) {
+const copyHtml = async function fileProcessor({ outDir }) {
   const source = "./src/index.html";
   const destination = `${outDir}/index.html`;
 
@@ -16,3 +16,5 @@ module.exports = async function ({ outDir }) {
     console.error(err);
   }
 };
+
+export { copyHtml };
