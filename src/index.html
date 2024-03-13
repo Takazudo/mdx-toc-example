@@ -1,0 +1,17 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="module" src="./index.js"></script>
+<script>
+// ES build watcher
+new EventSource("/esbuild").addEventListener("change", () => location.reload());
+</script>
+</head>
+<body>
+<p>Hi there.</p>
+</body>
+</html>

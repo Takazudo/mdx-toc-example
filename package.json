@@ -1,0 +1,28 @@
+{
+  "name": "mdx-toc-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "node ./build/build.cjs",
+    "dev": "node ./build/watch.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Takazudo/mdx-toc-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Takazudo/mdx-toc-example/issues"
+  },
+  "homepage": "https://github.com/Takazudo/mdx-toc-example#readme",
+  "devDependencies": {
+    "@mdx-js/react": "^3.0.1"
+  },
+  "dependencies": {
+    "@mdx-js/esbuild": "^3.0.1",
+    "@mdx-js/mdx": "^3.0.1"
+  }
+}
