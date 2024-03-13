@@ -18,9 +18,7 @@
     "@mdx-js/react": "^3.0.1",
     "preact": "^10.19.6",
     "preact-render-to-string": "^6.4.0",
-    "virtual-hyperscript": "^4.6.0"
-  },
-  "dependencies": {
+    "virtual-hyperscript": "^4.6.0",
     "@jsdevtools/rehype-toc": "^3.0.2",
     "@mdx-js/esbuild": "^3.0.1",
     "@mdx-js/mdx": "^3.0.1",
