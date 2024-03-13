@@ -1,5 +1,7 @@
 import mdx from "@mdx-js/esbuild";
 import rehypeExternalLinks from "rehype-external-links";
+import rehypeSlug from "rehype-slug";
+import rehypeToc from "@jsdevtools/rehype-toc";
 
 const settings = {
   logLevel: "info",
@@ -20,6 +22,8 @@ const settings = {
             rel: ["nofollow"],
           },
         ],
+        [rehypeSlug],
+        [rehypeToc],
       ],
     }),
   ],
